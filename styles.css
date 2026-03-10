@@ -239,13 +239,54 @@ li {
 footer {
   text-align: center;
   margin-top: 4rem;
-  font-size: 0.9rem;
-  color: #64748b;
 }
 
-footer p {
-  max-width: 520px;
+.footer-credit {
+  display: inline-block;
+  font-size: 0.95rem;
+  color: #e2e8f0;
   margin: 0.75rem auto 0;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  background: rgba(2, 6, 23, 0.85);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  backdrop-filter: blur(10px);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.footer-credit a {
+  color: #f0fdfa;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+
+.footer-credit a:hover {
+  color: #fff;
+}
+
+.footer-legal {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #64748b;
+  letter-spacing: 0.02em;
+}
+
+.footer-legal a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.footer-legal a:hover {
+  color: #cbd5e1;
+}
+
+.footer-legal-sep {
+  color: #475569;
+  pointer-events: none;
 }
 
 /* Event hero banner */
