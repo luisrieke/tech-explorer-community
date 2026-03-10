@@ -1,5 +1,5 @@
 ## Tech Explorer Community
 
-Dieses Repository gehört zur Tech-Explorer-Community und bündelt Infos rund um unsere Events und Treffen in **Berlin**, **München**, **Hamburg** (und ggf. weiteren Städten).
+This repository belongs to the Tech Explorer Community and brings together information about our events and meetups in **Berlin**, **Munich**, **Hamburg** (and other cities as needed).
 
-Du findest hier z. B. Hinweise zu Terminen, Orten, Formaten und Materialien – kurz: alles, was hilft, gemeinsam zu lernen, zu bauen und sich zu vernetzen.
+Here you’ll find details on dates, venues, formats, and materials – in short, everything that helps us learn, build, and connect together.
