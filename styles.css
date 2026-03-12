@@ -424,3 +424,58 @@ footer {
     font-size: 0.94rem;
   }
 }
+
+/* Supported events section */
+.supported-events {
+  width: 100%;
+  max-width: 980px;
+  margin: 2.5rem auto 0;
+  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), transparent 60%),
+    rgba(15, 23, 42, 0.94);
+  border-radius: 1.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  box-shadow:
+    0 28px 70px rgba(15, 23, 42, 0.9),
+    0 0 0 1px rgba(15, 23, 42, 0.95) inset;
+  padding: 1.6rem 1.6rem 1.7rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.supported-events::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 0% 0%, rgba(148, 163, 184, 0.18), transparent 55%),
+    linear-gradient(135deg, rgba(148, 163, 184, 0.12) 0, transparent 40%);
+  mix-blend-mode: screen;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.supported-events-content {
+  position: relative;
+  z-index: 1;
+}
+
+.supported-events h2 {
+  font-size: clamp(1.65rem, 3vw, 2rem);
+  font-weight: 600;
+  color: #e5e7eb;
+  margin-bottom: 0.5rem;
+}
+
+.supported-events-subtitle {
+  font-size: 0.98rem;
+  color: #cbd5f5;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 720px) {
+  .supported-events {
+    padding: 1.25rem 1.1rem 1.35rem;
+  }
+}
