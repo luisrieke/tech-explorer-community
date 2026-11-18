@@ -61,6 +61,18 @@ body::after {
       transparent 3px);
 }
 
+.tv-static {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 64;
+  pointer-events: none;
+  opacity: 0;
+  mix-blend-mode: screen;
+  image-rendering: pixelated;
+}
+
 @keyframes grain {
   0% { transform: translate(0, 0); }
   17% { transform: translate(-4%, 3%); }
@@ -847,6 +859,7 @@ body.popup-open {
   }
 
   html::after,
+  .tv-static,
   .glitch::before,
   .glitch::after {
     display: none;

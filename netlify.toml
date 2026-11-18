@@ -1,0 +1,13 @@
+# Netlify caches CSS and JS in the browser for 4 hours by default, while HTML
+# revalidates immediately. A new design then shows with the previous stylesheet
+# until that window expires. Revalidate these files on every load. The ?v=
+# hash on each link busts copies already stored under the old URL.
+[[headers]]
+for = "/styles.css"
+[headers.values]
+  Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+for = "/script.js"
+[headers.values]
+  Cache-Control = "public, max-age=0, must-revalidate"
