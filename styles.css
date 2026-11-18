@@ -850,6 +850,55 @@ body.popup-open {
   text-decoration: none;
 }
 
+/* Media page: cover download */
+.media-page {
+  width: 100%;
+  max-width: 1040px;
+  text-align: left;
+}
+
+.media-boot {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.04em;
+  color: var(--text-dim);
+  margin-bottom: 0.6rem;
+}
+
+.media-page h1 {
+  font-size: clamp(1.85rem, 4vw, 2.5rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  margin-top: 0.55rem;
+  line-height: 1.15;
+}
+
+.media-lead {
+  margin-top: 0.75rem;
+  max-width: 62ch;
+  color: var(--text-muted);
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.cover-frame {
+  margin: 1.6rem 0 1.15rem;
+  border: 1px solid var(--border-strong);
+  background: #090909;
+  line-height: 0;
+}
+
+.cover-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.media-page .luma-calendars {
+  margin-top: 0.15rem;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
