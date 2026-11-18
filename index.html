@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Berlin Tech Explorer Community</title>
+  <title>Tech Explorer Community — Paris, Berlin, Munich &amp; Hamburg</title>
   <meta name="description"
-    content="Mostly about tech events in Berlin, Munich and Hamburg — plus a cosy Slack for founders, developers and builders who want the real calendar, not noise." />
+    content="Mostly about tech events in Paris, Berlin, Munich and Hamburg — plus a cosy Slack for founders, developers and builders who want the real calendar, not noise. Run by Luis, Founder in Residence at Pioneers VC, Station F." />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
@@ -16,14 +16,26 @@
 
 <body>
   <header>
-    <div class="badge">Tech events · Slack · Berlin · Munich · Hamburg</div>
-    <h1>Tech Explorer Community</h1>
-    <p>Mostly <strong>tech events</strong> in Berlin, Munich and Hamburg. A small Slack sits alongside — what’s on, who’s
+    <div class="boot-line" aria-hidden="true"><span>&gt; init tech_explorer --cities=4 ... ok</span></div>
+    <div class="badge">Tech events · Slack · Paris · Berlin · Munich · Hamburg</div>
+    <h1 class="glitch" data-text="Tech Explorer Community">Tech Explorer Community</h1>
+    <p>Mostly <strong>tech events</strong> in Paris, Berlin, Munich and Hamburg. A small Slack sits alongside — what’s on, who’s
       around, and light chat on jobs and builds. Low traffic, on purpose.</p>
-    <a class="cta header-luma-cta" href="https://luma.com/techexpl-berlin" target="_blank" rel="noopener noreferrer">
-      Join the Luma calendar
-      <span class="cta-meta">Tech Explorer Berlin · subscribe for new events</span>
-    </a>
+    <p class="founder-note">The whole Slack community is run by <a href="https://luisrieke.com/" target="_blank"
+        rel="noopener noreferrer">Luis</a>, who just moved to Paris to build a startup. Right now he's a Founder in
+      Residence with <strong>Pioneers VC</strong> at <strong>Station F</strong> — follow along with <a
+        href="https://luisrieke.com/12-startups-in-12-weeks" target="_blank" rel="noopener noreferrer">12 startups in 12
+        weeks</a>.</p>
+    <div class="luma-calendars">
+      <a class="cta" href="https://luma.com/techexpl-paris" target="_blank" rel="noopener noreferrer">
+        Paris Luma calendar
+        <span class="cta-meta">Tech Explorer Paris · subscribe for new events</span>
+      </a>
+      <a class="cta" href="https://luma.com/techexpl-berlin" target="_blank" rel="noopener noreferrer">
+        Berlin Luma calendar
+        <span class="cta-meta">Tech Explorer Berlin · subscribe for new events</span>
+      </a>
+    </div>
   </header>
 
   <section class="card-grid">
@@ -32,7 +44,7 @@
       <h2>What this is</h2>
       <p>
         Event-first: the Slack is where we coordinate around <strong>tech events</strong> — what’s happening this week,
-        who’s heading out, and side conversations after. Engineers, product folks, founders and operators mostly in Berlin,
+        who’s heading out, and side conversations after. Engineers, product folks, founders and operators mostly in Paris and Berlin,
         with channels for Munich and Hamburg too.
       </p>
 
@@ -50,9 +62,13 @@
       <h2>What we talk about</h2>
       <p>
         The through-line is <strong>tech events and the scene around them</strong> — then the hallway track: what people
-        are building, feedback, and practical notes on working in tech in Berlin, Munich and Hamburg.
+        are building, feedback, and practical notes on working in tech in Paris, Berlin, Munich and Hamburg.
       </p>
       <div class="city-list">
+        <div class="city-tag">
+          <span class="city">Paris</span>
+          <span class="meta">startups, Station F, AI, founders</span>
+        </div>
         <div class="city-tag">
           <span class="city">Berlin</span>
           <span class="meta">AI, deep-tech, product, founders</span>
@@ -79,7 +95,7 @@
       <ul>
         <li>Software engineers, data/ML folks, designers and product managers</li>
         <li>Founders and operators building in or around tech</li>
-        <li>People moving to Berlin / Munich / Hamburg who want to plug into the scene</li>
+        <li>People moving to Paris / Berlin / Munich / Hamburg who want to plug into the scene</li>
       </ul>
 
       <p>
@@ -97,23 +113,70 @@
     <div class="supported-events-content">
       <span class="card-label">04 // Calendar</span>
       <h2>Supported events</h2>
-      <p class="supported-events-subtitle">Meetups, hackathons and community events we host or support across Germany.</p>
-      <a class="cta" href="https://luma.com/techexpl-berlin" target="_blank" rel="noopener noreferrer">
-        Browse upcoming events
-        <span class="cta-meta">on lu.ma · free & paid</span>
-      </a>
+      <p class="supported-events-subtitle">Meetups, hackathons and community events we host or support in Paris and across Germany.</p>
+      <div class="luma-calendars">
+        <a class="cta" href="https://luma.com/techexpl-paris" target="_blank" rel="noopener noreferrer">
+          Paris events
+          <span class="cta-meta">on lu.ma · free &amp; paid</span>
+        </a>
+        <a class="cta" href="https://luma.com/techexpl-berlin" target="_blank" rel="noopener noreferrer">
+          Berlin events
+          <span class="cta-meta">on lu.ma · free &amp; paid</span>
+        </a>
+      </div>
     </div>
   </section>
 
   <footer>
     <img class="profile-img" src="https://luisrieke.com/assets/images/me_round.png" alt="Luis Rieke">
     <p class="footer-credit">Hosted by <a href="https://luisrieke.com/" target="_blank"
-        rel="noopener noreferrer">Luis</a></p>
+        rel="noopener noreferrer">Luis</a> · Founder in Residence at Pioneers VC, Station F, Paris</p>
     <p class="footer-legal">
       <a href="impressum.html">Imprint</a><span class="footer-legal-sep"> · </span><a href="datenschutz.html">Privacy
         Policy</a>
     </p>
   </footer>
+
+  <div class="popup" id="slack-popup" role="dialog" aria-modal="true" aria-labelledby="popup-title-ask" hidden>
+    <div class="popup-window" tabindex="-1">
+      <div class="popup-bar">
+        <span>tech_explorer://slack</span>
+        <button class="popup-close" type="button" data-popup="decline" aria-label="Close">×</button>
+      </div>
+
+      <div class="popup-step" data-step="ask">
+        <span class="card-label">05 // Incoming transmission</span>
+        <h2 id="popup-title-ask" class="glitch" data-text="Join the Tech Explorer Community on Slack">Join the Tech Explorer
+          Community on Slack</h2>
+        <p>Events across Paris, Berlin, Munich and Hamburg, a hallway track of builders, and zero noise. Takes a
+          minute to apply.</p>
+        <div class="popup-actions">
+          <a class="cta" href="https://tally.so/r/jaMJxJ" target="_blank" rel="noopener noreferrer"
+            data-popup="apply">
+            Apply now
+            <span class="cta-meta">short form · human-reviewed</span>
+          </a>
+          <button class="popup-secondary" type="button" data-popup="decline">No thanks</button>
+        </div>
+      </div>
+
+      <div class="popup-step" data-step="confirm" hidden>
+        <span class="card-label">06 // Are you sure?</span>
+        <h2 id="popup-title-confirm" class="glitch" data-text="Really not?">Really not?</h2>
+        <p>The hallway track is waiting. Founders, engineers and builders who actually show up to things.</p>
+        <div class="popup-actions">
+          <a class="cta" href="https://tally.so/r/jaMJxJ" target="_blank" rel="noopener noreferrer"
+            data-popup="apply">
+            Ok, I'll apply
+            <span class="cta-meta">still just a short form</span>
+          </a>
+          <button class="popup-secondary" type="button" data-popup="dismiss">No, really not</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
 </body>
 
 </html>
