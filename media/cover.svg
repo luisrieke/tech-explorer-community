@@ -1,20 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
-  <rect width="1920" height="1080" fill="#090909"/>
-  <g fill="none" stroke="rgba(255,255,255,0.045)" stroke-width="1">
+  <rect width="1920" height="1080" fill="#f6f6f6"/>
+  <g fill="none" stroke="rgba(0,0,0,0.045)" stroke-width="1">
     <path d="M0 80 H1920 M0 160 H1920 M0 240 H1920 M0 320 H1920 M0 400 H1920 M0 480 H1920 M0 560 H1920 M0 640 H1920 M0 720 H1920 M0 800 H1920 M0 880 H1920 M0 960 H1920"/>
     <path d="M80 0 V1080 M160 0 V1080 M240 0 V1080 M320 0 V1080 M400 0 V1080 M480 0 V1080 M560 0 V1080 M640 0 V1080 M720 0 V1080 M800 0 V1080 M880 0 V1080 M960 0 V1080 M1040 0 V1080 M1120 0 V1080 M1200 0 V1080 M1280 0 V1080 M1360 0 V1080 M1440 0 V1080 M1520 0 V1080 M1600 0 V1080 M1680 0 V1080 M1760 0 V1080 M1840 0 V1080"/>
   </g>
   <g transform="translate(96 186)">
     <rect width="708" height="708" rx="158" fill="#2D634E"/>
     <rect x="64" y="64" width="580" height="580" rx="110" fill="none" stroke="#BEE2D1" stroke-width="8"/>
-    <rect x="96" y="96" width="516" height="516" rx="84" fill="#090909"/>
+    <rect x="96" y="96" width="516" height="516" rx="84" fill="#f6f6f6"/>
     <g fill="#BEE2D1" font-family="IBM Plex Sans" font-weight="700" text-anchor="middle">
       <text x="354" y="318" font-size="92" letter-spacing="8">TECH</text>
       <text x="354" y="424" font-size="92" letter-spacing="0">EXPLC</text>
     </g>
   </g>
-  <text x="868" y="408" fill="#5c5c5c" font-family="IBM Plex Mono" font-weight="500" font-size="18" letter-spacing="1.4">&gt; init tech_explorer --cities=4 ... ok</text>
-  <text x="868" y="530" fill="#e5e5e5" font-family="IBM Plex Sans" font-weight="600" font-size="92" letter-spacing="-2.4">Tech Explorer</text>
+  <text x="868" y="408" fill="#a3a3a3" font-family="IBM Plex Mono" font-weight="500" font-size="18" letter-spacing="1.4">&gt; init tech_explorer --cities=4 ... ok</text>
+  <text x="868" y="530" fill="#1a1a1a" font-family="IBM Plex Sans" font-weight="600" font-size="92" letter-spacing="-2.4">Tech Explorer</text>
   <text x="868" y="634" fill="#BEE2D1" font-family="IBM Plex Sans" font-weight="600" font-size="92" letter-spacing="-2.4">Community</text>
-  <text x="868" y="724" fill="#8c8c8c" font-family="IBM Plex Mono" font-weight="500" font-size="20" letter-spacing="3.6">PARIS &#183; BERLIN &#183; MUNICH &#183; HAMBURG</text>
+  <text x="868" y="724" fill="#737373" font-family="IBM Plex Mono" font-weight="500" font-size="20" letter-spacing="3.6">PARIS &#183; BERLIN &#183; MUNICH &#183; HAMBURG</text>
 </svg>

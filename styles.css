@@ -1,15 +1,16 @@
 :root {
-  --bg: #090909;
-  --surface: #090909;
-  --grid-line: rgba(255, 255, 255, 0.028);
-  --text: #e5e5e5;
-  --text-muted: #8c8c8c;
-  --text-dim: #5c5c5c;
-  --border: rgba(255, 255, 255, 0.08);
-  --border-strong: rgba(255, 255, 255, 0.14);
+  color-scheme: light;
+  --bg: #f6f6f6;
+  --surface: #f6f6f6;
+  --grid-line: rgba(0, 0, 0, 0.028);
+  --text: #1a1a1a;
+  --text-muted: #737373;
+  --text-dim: #a3a3a3;
+  --border: rgba(0, 0, 0, 0.08);
+  --border-strong: rgba(0, 0, 0, 0.14);
   --mono: 'IBM Plex Mono', 'JetBrains Mono', ui-monospace, monospace;
   --sans: 'IBM Plex Sans', system-ui, sans-serif;
-  --noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
 /* Atmosphere: grain, scanlines, vignette, scan sweep */
@@ -19,7 +20,7 @@ html::before {
   inset: 0;
   z-index: 60;
   pointer-events: none;
-  background: radial-gradient(ellipse at center, transparent 55%, rgba(0, 0, 0, 0.55) 100%);
+  background: radial-gradient(ellipse at center, transparent 55%, rgba(255, 255, 255, 0.55) 100%);
 }
 
 html::after {
@@ -31,7 +32,7 @@ html::after {
   height: 22vh;
   z-index: 61;
   pointer-events: none;
-  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.025) 50%, transparent);
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.025) 50%, transparent);
   transform: translateY(-30vh);
   animation: scan-sweep 9s linear infinite;
 }
@@ -55,8 +56,8 @@ body::after {
   z-index: 63;
   pointer-events: none;
   background: repeating-linear-gradient(to bottom,
-      rgba(0, 0, 0, 0.22) 0,
-      rgba(0, 0, 0, 0.22) 1px,
+      rgba(255, 255, 255, 0.22) 0,
+      rgba(255, 255, 255, 0.22) 1px,
       transparent 1px,
       transparent 3px);
 }
@@ -69,7 +70,7 @@ body::after {
   z-index: 64;
   pointer-events: none;
   opacity: 0;
-  mix-blend-mode: screen;
+  mix-blend-mode: multiply;
   image-rendering: pixelated;
 }
 
@@ -191,7 +192,7 @@ header .luma-calendars {
   height: 5px;
   border-radius: 50%;
   background: var(--text);
-  box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
   animation: live-blink 1.6s steps(1) infinite;
 }
 
@@ -360,7 +361,7 @@ header .luma-calendars {
   pointer-events: none;
   opacity: 0;
   transition: opacity 200ms ease;
-  background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(255, 255, 255, 0.07), transparent 45%);
+  background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(0, 0, 0, 0.07), transparent 45%);
 }
 
 .card.is-tilting::after {
@@ -503,7 +504,7 @@ li::before {
 }
 
 .cta:hover .cta-meta {
-  color: #3a3a3a;
+  color: #c5c5c5;
 }
 
 @keyframes cta-glitch {
@@ -650,7 +651,7 @@ body.popup-open {
   align-items: center;
   justify-content: center;
   padding: 1.25rem;
-  background: rgba(0, 0, 0, 0.72);
+  background: rgba(255, 255, 255, 0.72);
   backdrop-filter: blur(4px) grayscale(1);
   -webkit-backdrop-filter: blur(4px) grayscale(1);
   animation: popup-fade 0.25s ease-out both;
@@ -665,11 +666,11 @@ body.popup-open {
   width: 100%;
   max-width: 460px;
   background: var(--bg);
-  border: 1px solid rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(0, 0, 0, 0.55);
   box-shadow:
-    0 0 0 1px rgba(255, 255, 255, 0.06),
-    0 0 40px rgba(255, 255, 255, 0.06),
-    0 30px 80px rgba(0, 0, 0, 0.8);
+    0 0 0 1px rgba(0, 0, 0, 0.06),
+    0 0 40px rgba(0, 0, 0, 0.06),
+    0 30px 80px rgba(255, 255, 255, 0.8);
   outline: none;
   animation: popup-glitch-in 0.45s steps(1) both;
 }
@@ -885,7 +886,7 @@ body.popup-open {
 .cover-frame {
   margin: 1.6rem 0 1.15rem;
   border: 1px solid var(--border-strong);
-  background: #090909;
+  background: #f6f6f6;
   line-height: 0;
 }
 
